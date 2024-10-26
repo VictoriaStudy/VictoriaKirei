@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .class_novigation {
+            float: left;
+            /* Не знаю, как сделать для ширины 15em. Смогла сделать только для ширины 15% */
+            width: 15%;
+            background-color: rgb(197, 235, 223);
+            padding-top: 15px;
+
+        }
+
+        .class_article {
+            float: right;
+            width: 85%;
+            height: 140px;
+            background-color: rgb(235, 215, 188);
+            margin-bottom: 2em;
+            padding-top: 15px;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        .footer {
+            width: 100%;
+            background-color: rgb(188, 221, 235);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="class_novigation">
+            <strong>Блок навигации</strong><br>
+            <ul style="list-style-type: disc;">
+                <li>Ширина 15em</li>
+                <li>Должен присутствовать цвет фона</li>
+                <li>Располагается слева</li>
+                <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
+                <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
+            </ul>
+        </div>
+        <div class="class_article">
+            <strong>Статья 1</strong><br><br>
+            Размер блока:<br>
+            Занимает всю доступную ширину<br>
+            Должен присутствовать цвет фона<br>
+            Во всех "статьях" сделать отступ снизу от соседей равным 2em, при помощи свойства margin-bottom.
+        </div>
+        <div class="class_article" style="height: 270px;">
+            <strong>Статья 2</strong><br><br>
+            Размер блока:<br>
+            Занимает всю доступную ширину<br>
+            Должен присутствовать цвет фона<br>
+            Во всех "статьях" сделать отступ снизу от соседей равным 2em, при помощи свойства margin-bottom.
+            Картинка вставлена при помощи тега, плавание организовано по правому краю внутри данной статьи для этой
+            картинки.
+            <img style="float: right; padding-top: 25px;" src="img/icon_mail.png">
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="footer">
+        Нижний блок, подвал. Занимает всю доступную ширину. Высота определяется помещённым внутрь контентом.
+    </div>
+</body>
+
+</html>
