@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            counter-reset: my_counter 65;
+            /* Инициируем счетчик */
+        }
+        div::before {
+                counter-increment: my_counter -1; /* Указываем идентификатор счетчика */
+                content: counter(my_counter); 
+            }
+        table {
+            border-width: 5px;
+            border-style: solid;
+            border-color: black;
+            border-spacing: 0px;
+            counter-reset: 64;           
+        }
+
+        div {
+            width: 70px;
+            height: 70px;
+            font-size: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        td {
+            background-color: white;
+        }
+
+        tr:nth-child(odd) td:nth-child(odd) {
+            background-color: black;
+            color: white;
+        }
+
+        tr:nth-child(even) td:nth-child(even) {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <div></div>
+            </td>
+            <td>
+                <div></div>
+            </td>
+            <td>
+                <div></div>
+            </td>
+            <td>
+                <div></div>
+            </td>
+            <td>
+                <div></div>
+            </td>
+            <td>
+                <div></div>
+            </td>
+            <td>
+                <div></div>
+            </td>
+            <td>
+                <div></div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div></div>
+            </td>
+            <td>
+                <div></div>
+            </td>
+            <td>
+                <div></div>
+            </td>
+            <td>
+                <div></div>
+            </td>
+            <td>
+                <div></div>
+            </td>
+            <td>
+                <div></div>
+            </td>
+            <td>
+                <div></div>
+            </td>
+            <td>
+                <div></div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div></div>
+            </td>
+            <td>
+                <div></div>
+            </td>
+            <td>
+                <div></div>
+            </td>
+            <td>
+                <div></div>
+            </td>
+            <td>
+                <div></div>
+            </td>
+            <td>
+                <div></div>
+            </td>
+            <td>
+                <div></div>
+            </td>
+            <td>
+                <div></div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div></div>
+            </td>
+            <td>
+                <div></div>
+            </td>
+            <td>
+                <div></div>
+            </td>
+            <td>
+                <div></div>
+            </td>
+            <td>
+                <div></div>
+            </td>
+            <td>
+                <div></div>
+            </td>
+            <td>
+                <div></div>
+            </td>
+            <td>
+                <div></div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div></div>
+            </td>
+            <td>
+                <div></div>
+            </td>
+            <td>
+                <div></div>
+            </td>
+            <td>
+                <div></div>
+            </td>
+            <td>
+                <div></div>
+            </td>
+            <td>
+                <div></div>
+            </td>
+            <td>
+                <div></div>
+            </td>
+            <td>
+                <div></div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div></div>
+            </td>
+            <td>
+                <div></div>
+            </td>
+            <td>
+                <div></div>
+            </td>
+            <td>
+                <div></div>
+            </td>
+            <td>
+                <div></div>
+            </td>
+            <td>
+                <div></div>
+            </td>
+            <td>
+                <div></div>
+            </td>
+            <td>
+                <div></div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div></div>
+            </td>
+            <td>
+                <div></div>
+            </td>
+            <td>
+                <div></div>
+            </td>
+            <td>
+                <div></div>
+            </td>
+            <td>
+                <div></div>
+            </td>
+            <td>
+                <div></div>
+            </td>
+            <td>
+                <div></div>
+            </td>
+            <td>
+                <div></div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div></div>
+            </td>
+            <td>
+                <div></div>
+            </td>
+            <td>
+                <div></div>
+            </td>
+            <td>
+                <div></div>
+            </td>
+            <td>
+                <div></div>
+            </td>
+            <td>
+                <div></div>
+            </td>
+            <td>
+                <div></div>
+            </td>
+            <td>
+                <div></div>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
