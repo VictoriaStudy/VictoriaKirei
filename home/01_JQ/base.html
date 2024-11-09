@@ -114,12 +114,12 @@
     <script>
         $(document).ready(function($){
             $("tr").on('click',function(){
-                $(this).slideToggle();
+                $(this).slideUp();
                 const button=document.getElementById("button_string");
                 button.innerText="Показать все строки";
-            })
+            });
             $("button").on('click',function(){
-                $("tr").show();
+                $("tr").slideDown();
                 const button=document.getElementById("button_string");
                 button.innerText="Нет скрытых строк";
             })
